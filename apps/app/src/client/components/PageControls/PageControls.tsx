@@ -307,7 +307,7 @@ const PageControlsSubstance = (props: PageControlsSubstanceProps): JSX.Element =
     <div className={`${styles['grw-page-controls']} hstack gap-2`} ref={pageControlsRef}>
       { isViewMode && isDeviceLargerThanMd && !isSearchPage && !isSearchPage && (
         <>
-          <SearchButton />
+          {/* <SearchButton /> */}
           <OpenDefaultAiAssistantButton />
         </>
       )}
