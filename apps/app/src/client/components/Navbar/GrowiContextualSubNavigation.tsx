@@ -426,7 +426,7 @@ const GrowiContextualSubNavigation = (props: GrowiContextualSubNavigationProps):
               />
             )}
 
-            { isGuestUser && (
+            {/* isGuestUser && (
               <div className="mt-2">
                 <span>
                   <span className="d-inline-block" id="sign-up-link">
@@ -449,7 +449,7 @@ const GrowiContextualSubNavigation = (props: GrowiContextualSubNavigationProps):
                   <span className="material-symbols-outlined me-1">login</span>{t('Sign in')}
                 </Link>
               </div>
-            ) }
+            ) */}
           </nav>
 
         </GroundGlassBar>
