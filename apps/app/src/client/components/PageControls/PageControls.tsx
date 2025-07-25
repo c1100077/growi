@@ -318,7 +318,7 @@ const PageControlsSubstance = (props: PageControlsSubstanceProps): JSX.Element =
         />
       )}
 
-      { !hideSubControls && (
+      {/* !hideSubControls && (
         <div className={`hstack gap-1 ${!isViewMode && 'd-none d-lg-flex'}`}>
           {revisionId != null && _isIPageInfoForOperation && (
             <SubscribeButton
@@ -349,7 +349,7 @@ const PageControlsSubstance = (props: PageControlsSubstanceProps): JSX.Element =
             />
           ) }
         </div>
-      ) }
+      )*/ }
 
       { showPageControlDropdown && _isIPageInfoForOperation && (
         <PageItemControl
