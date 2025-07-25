@@ -4,7 +4,7 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 
 import { RawLayout } from './RawLayout';
-
+import { useCurrentUser } from '~/stores-universal/context';
 
 import styles from './BasicLayout.module.scss';
 
@@ -55,12 +55,15 @@ type Props = {
 
 
 export const BasicLayout = ({ children, className }: Props): JSX.Element => {
+  const { data: currentUser } = useCurrentUser();
   return (
     <RawLayout className={`${moduleClass} ${className ?? ''}`}>
       <div className="page-wrapper flex-row">
+       { currentUser != null && (
         <div className="z-2 d-print-none">
-          <Sidebar />
+           <Sidebar />
         </div>
+       )}
 
         <div className="d-flex flex-grow-1 flex-column mw-0 z-1">{/* neccessary for nested {children} make expanded */}
           <AlertSiteUrlUndefined />
