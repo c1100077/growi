@@ -93,7 +93,7 @@ export const BasicLayout = ({ children, className }: Props): JSX.Element => {
       <ShortcutsModal />
       <PageBulkExportSelectModal />
       <GrantedGroupsInheritanceSelectModal />
-      <SystemVersion showShortcutsButton />
+      {/*<SystemVersion showShortcutsButton />*/}
     </RawLayout>
   );
 };
