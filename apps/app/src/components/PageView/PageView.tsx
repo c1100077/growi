@@ -158,7 +158,7 @@ export const PageView = (props: Props): JSX.Element => {
     <PageViewLayout
       className={className}
       //headerContents={headerContents}
-      sideContents={sideContents}
+      //sideContents={sideContents}
       footerContents={footerContents}
       expandContentWidth={shouldExpandContent}
     >
