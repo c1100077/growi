@@ -139,7 +139,7 @@ export const PageView = (props: Props): JSX.Element => {
             : <RevisionRenderer rendererOptions={rendererOptions} markdown={markdown} />
           }
 
-          { !isIdenticalPathPage && !isNotFound && (
+          {/* !isIdenticalPathPage && !isNotFound && (
             <div id="comments-container" ref={commentsContainerRef}>
               <Comments
                 pageId={page._id}
@@ -148,7 +148,7 @@ export const PageView = (props: Props): JSX.Element => {
                 onLoaded={() => setCommentsLoaded(true)}
               />
             </div>
-          ) }
+          ) */}
         </div>
       </>
     );
